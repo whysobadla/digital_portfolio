@@ -4,66 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jun's Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    section {
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    footer {
-      background: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <!-- Animated background -->
+  <div class="circles">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <!-- Navbar beside title -->
   <header>
-    <h1>Welcome to Jun's Portfolio</h1>
+    <h1>Jun's Portfolio</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#tech">Tech Stack</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- Sections -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm Jun, a forensic workflow architect and InfoSecurity strategist. 
-       I specialize in designing secure, audit-friendly systems and troubleshooting complex network issues.</p>
+    <p>Hello! I'm Jun, a forensic workflow architect and InfoSecurity strategist. I design secure, audit-friendly systems and troubleshoot complex network issues.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>Automated network diagnostics with PowerShell</li>
-      <li>Scenario-driven DNS and application troubleshooting</li>
-      <li>Stakeholder-focused audit documentation</li>
-    </ul>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Automated Diagnostics</h3>
+        <p>Built PowerShell/Python scripts to automate network troubleshooting, reducing manual cycles by 70%.</p>
+      </div>
+      <div class="card">
+        <h3>Connectivity Case Study</h3>
+        <p>Analyzed ISP routing issues with traceroute/pathping, documented findings for escalation and resolution.</p>
+      </div>
+      <div class="card">
+        <h3>Audit Documentation Framework</h3>
+        <p>Created audit-ready reports with reproducible evidence, cutting review cycles from 2 weeks to 10 days.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech">
+    <h2>Tech Stack</h2>
+    <div class="skill">
+      <span>PowerShell</span>
+      <div class="bar"><div class="bar-fill expert">Expert</div></div>
+    </div>
+    <div class="skill">
+      <span>Python</span>
+      <div class="bar"><div class="bar-fill proficient">Proficient</div></div>
+    </div>
+    <div class="skill">
+      <span>DNS & Networking</span>
+      <div class="bar"><div class="bar-fill expert">Expert</div></div>
+    </div>
+    <div class="skill">
+      <span>Docker</span>
+      <div class="bar"><div class="bar-fill good">Good</div></div>
+    </div>
   </section>
 
   <section id="contact">
