@@ -194,41 +194,42 @@ footer {
 .proficient { width: 70%; background: #4db6ac; }
 .good { width: 50%; background: #80cbc4; }
 
-/* Contact links */
-.contact-links {
+
+
+
+.contact-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 10px;
 }
 
-.contact-links a {
+.contact-actions button {
   background: var(--secondary);
   color: #fff;
   padding: 10px 16px;
   border-radius: 6px;
-  text-decoration: none;
+  border: none;
   font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: background 0.2s ease, transform 0.08s ease;
 }
 
-.contact-links a:hover {
-  background: #00796b;
+.contact-actions button:hover {
+  background: var(--button-hover);
+  color: black;
 }
 
-/* Optional direct button class */
-a.button {
-  background: var(--secondary);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s ease;
+.contact-actions button:active {
+  transform: translateY(1px);
 }
 
-a.button:hover {
-  background: #00796b;
+.contact-actions button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
+
