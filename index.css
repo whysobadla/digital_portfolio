@@ -216,3 +216,14 @@ footer {
 .contact-links a:hover {
   background: #00796b;
 }
+
+a.button, .contact-links a {
+  background: var(--secondary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
