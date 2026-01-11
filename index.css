@@ -194,3 +194,25 @@ footer {
 .expert { width: 90%; background: var(--secondary); }
 .proficient { width: 70%; background: #4db6ac; }
 .good { width: 50%; background: #80cbc4; }
+
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-links a {
+  background: var(--secondary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+  background: #00796b;
+}
