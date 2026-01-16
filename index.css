@@ -233,11 +233,5 @@ footer {
   outline-offset: 2px;
 }
 
-.card-img {
-  width: 100%;
-  height: 160px;        /* adjust as needed */
-  object-fit: cover;    /* keeps aspect ratio and crops nicely */
-  border-radius: 12px 12px 0 0; /* rounded top corners to match card */
-  margin-bottom: 15px;
-}
+
 
